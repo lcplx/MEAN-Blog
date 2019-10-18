@@ -1,16 +1,17 @@
 # Git
+...install Git from git-scm.com
+...Register Git Hub account 
+...set up ssh key at local
 
-install Git from git-scm.com
-Register Git Hub account 
-set up ssh key at local
+1. install `visual` studio code 
+2. install node js
+3. install Angular through npm( denpency on node)
 
-# install visual studio code 
-# install node js
-# install Angular through npm( denpency on node)
+[git scm](https://www.git-scm.com)
 
-
-downloadn
-
+```javascript
+print(a)  
+```
 # MeanCourse
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
