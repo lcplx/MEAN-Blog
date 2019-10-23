@@ -1,11 +1,11 @@
-const Post = require("../models/post");
+const Profile = require("../models/profile");
 
 exports.createPost = (req, res, next) => {
     const url = req.protocol + "://" + req.get("host");
-    const post = new Post({
+    const post = new Profile({
         title: req.body.title,
         content: req.body.content,
-        imagePath: url + "/images/" + req.file.filename,
+        // imagePath: url + "/images/" + req.file.filename,
         creator: req.userData.userId
     });
     post

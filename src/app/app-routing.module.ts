@@ -3,9 +3,12 @@ import { RouterModule, Routes } from "@angular/router";
 import { PostListComponent } from "./posts/post-list/post-list.component";
 import { PostCreateComponent } from "./posts/post-create/post-create.component";
 import { AuthGuard } from "./auth/auth.guard";
+import { ProfileAnalysisComponent } from "./profile/profile-analysis/profile-analysis.component";
 
 const routes: Routes = [
   { path: "", component: PostListComponent },
+  // { path: "profile", component: ProfileAnalysisComponent},
+  { path: "profile", loadChildren: "./profile/profile.module#ProfileModule"},
   { path: "create", component: PostCreateComponent, canActivate: [AuthGuard] },
   { path: "edit/:postId", component: PostCreateComponent, canActivate: [AuthGuard] },
   { path: "auth", loadChildren: "./auth/auth.module#AuthModule"}
