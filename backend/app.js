@@ -42,5 +42,8 @@ app.use((req, res, next) => {
 app.use("/api/posts", postsRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/profile", profileRoutes);
+app.get('/api/chatRoom', function(req, res) {
+    res.render('index.ejs');
+});
 
 module.exports = app;
