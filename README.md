@@ -3,6 +3,11 @@
 ...Register Git Hub account 
 ...set up ssh key at local
 
+eval $(ssh-agent -s)
+ls -al ~/.ssh
+ssh-add ~/.ssh/id_rsa
+
+
 1. install `visual` studio code 
 2. install node js
 3. install Angular through npm( denpency on node)
