@@ -41,3 +41,4 @@ Thumbs.db
 
 backend/images
 backend/angular
+/backend/node_modules
