@@ -30,6 +30,9 @@ inside folder
 `npm install`
 ## and install angular tool
 `npm install -g @angular/cli`
+##
+`npm run start:server` for backend
+`ng serve` for front end
 
 ## add angular tool into path 
 "%AppData%\npm"
